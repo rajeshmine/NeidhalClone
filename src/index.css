@@ -274,7 +274,18 @@ h1, h2, h3, h4, h5 {
     max-width: 100%;
   }
   }
+.about-page {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #3c3c3c;
+}
 
+.about-page h2 {
+  margin-bottom: 20px;
+  color: #b8543c;
+  }
 
 
 
