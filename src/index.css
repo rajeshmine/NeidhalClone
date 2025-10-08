@@ -170,7 +170,35 @@ h1, h2, h3, h4, h5 {
 .btn:hover {
   background-color: #af3e2b;
     }
+.category-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.filter-btn {
+  border: 1px solid #b8543c;
+  background-color: transparent;
+  color: #b8543c;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #af3e2b;
+  color: white;
+  border-color: #af3e2b;
+}
+
+.filter-btn.active {
+  background-color: #b8543c;
+  color: white;
+}
 
 
 
