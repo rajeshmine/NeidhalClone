@@ -1,62 +1,98 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fafafa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #3c3c3c;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 5px #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.navbar {
+/* Header */
+.header {
+  background-color: #b8543c;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgb(184 95 74 / 0.4);
+}
+
+.header-container {
   display: flex;
-  gap: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  font-weight: 600;
 }
 
 .navlink {
-  color: #b8543c;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
 }
 
-.navlink:hover {
-  text-decoration: underline;
+.navlink:hover,
+.navlink.active {
+  color: #fcd299;
 }
 
-h1 {
-  margin: 0;
-  color: #b8543c;
+.main-content {
+  flex-grow: 1;
+  padding: 40px 0;
 }
 
-h2 {
-  color: #af3e2b;
-  border-bottom: 2px solid #b8543c;
-  padding-bottom: 5px;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-}
-
-header {
-  text-align: center;
-  padding: 20px 0;
-}
-
+/* Footer */
 footer {
+  background-color: #b8543c;
+  color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgb(184 95 74 / 0.4);
+}
+
+/* Utility */
+h1, h2, h3, h4, h5 {
+  color: #af3e2b;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .nav {
+    gap: 15px;
+  }
 }
