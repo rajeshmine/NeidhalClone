@@ -96,3 +96,11 @@ h1, h2, h3, h4, h5 {
     gap: 15px;
   }
 }
+.footer-link {
+  color: #fcd299;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
