@@ -104,3 +104,79 @@ h1, h2, h3, h4, h5 {
 .footer-link:hover {
   text-decoration: underline;
 }
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: #f7e4d6;
+  color: #af3e2b;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.featured-products h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #b8543c;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 6px rgba(184, 95, 74, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 15px rgba(184, 95, 74, 0.35);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-weight: 700;
+  color: #af3e2b;
+  margin-bottom: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #b8543c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #af3e2b;
+    }
+
+
+
+
+
+
+
+
+
+
